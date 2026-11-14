@@ -122,8 +122,7 @@ st.subheader("Vehicle Type Analysis")
 vehicle_data = (
     completed.groupby("Vehicle_Type", as_index=False)
     .agg(
-        Total_Ride_Distance=("Ride_Distance", "sum"),
-        Total_Rides=("Booking_ID", "count")
+        Total_Ride_Distance=("Ride_Distance", "sum")
     )
 )
 
